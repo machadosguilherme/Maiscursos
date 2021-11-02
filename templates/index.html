@@ -121,7 +121,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="../static/assets/img/portfolio/fullsize/3.jpg" title="HTML & CSS">
+                        <a class="portfolio-box" href="../static/assets/img/portfolio/fullsize/html.jpg" title="HTML & CSS">
                             <img class="img-fluid" src="../static/assets/img/portfolio/thumbnails/html.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Programação</div>
@@ -130,7 +130,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="../static/assets/img/portfolio/fullsize/4.jpg" title="Javascript">
+                        <a class="portfolio-box" href="../static/assets/img/portfolio/fullsize/javaScript.jpg" title="Javascript">
                             <img class="img-fluid" src="../static/assets/img/portfolio/thumbnails/javaScript.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Desenvolvimento WEB</div>
@@ -139,7 +139,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="../static/assets/img/portfolio/fullsize/5.jpg" title="Kotlin">
+                        <a class="portfolio-box" href="../static/assets/img/portfolio/fullsize/kotlin.jpg" title="Kotlin">
                             <img class="img-fluid" src="../static/assets/img/portfolio/thumbnails/kotlin.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Desenvolvimento Mobile</div>
@@ -148,7 +148,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="../static/assets/img/portfolio/fullsize/6.jpg" title="Machine learning">
+                        <a class="portfolio-box" href="../static/assets/img/portfolio/fullsize/ia.jpeg" title="Machine learning">
                             <img class="img-fluid" src="../static/assets/img/portfolio/thumbnails/ia.jpeg" alt="..." />
                             <div class="portfolio-box-caption p-3">
                                 <div class="project-category text-white-50">Desenvolvimento de I.A</div>
@@ -170,63 +170,43 @@
                         <p class="text-muted mb-5">Pronto para começar a estudar programação? nos envie uma mensagem e entraremos em contato o mais breve possivel!</p>
                     </div>
                 </div>
-                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-                    <div class="col-lg-6">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                <div class="container px-5 my-5">
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <div class="mb-3">
+                            <label class="form-label" for="nome">Nome</label>
+                            <input class="form-control" id="nome" type="text" placeholder="Nome" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="nome:required">Nome is required.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="email">Email</label>
+                            <input class="form-control" id="email" type="email" placeholder="Email" data-sb-validations="required,email" />
+                            <div class="invalid-feedback" data-sb-feedback="email:required">Email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email Email is not valid.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="telefone">Telefone</label>
+                            <input class="form-control" id="telefone" type="text" placeholder="Telefone" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="telefone:required">Telefone is required.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="mensagem">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" type="text" placeholder="Mensagem" style="height: 10rem;" data-sb-validations="required"></textarea>
+                            <div class="invalid-feedback" data-sb-feedback="mensagem:required">Mensagem is required.</div>
+                        </div>
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
                             </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Enviar</button></div>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error sending message!</div>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+                        </div>
+                    </form>
                 </div>
+                <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-4 text-center mb-5 mb-lg-0">
                         <i class="bi-phone fs-2 mb-3 text-muted"></i>
